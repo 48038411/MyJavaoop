@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?>
+
+<?import com.soft1841.oop.week1.MyButton?>
+<?import com.soft1841.oop.week1.OtherButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<?import com.soft1841.oop.week1.MyLabel?>
+<?import javafx.scene.control.TextField?>
+<?import com.soft1841.oop.week1.MyTextField?>
+<?import javafx.scene.control.Button?>
+<?import com.soft1841.oop.week1.SearchButton?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.soft1841.oop.week1.ButtonController">
+    <ImageView AnchorPane.leftAnchor="70"
+               AnchorPane.topAnchor="50">
+        <Image url="/img/logo.png"/>
+    </ImageView>
+    <MyTextField text="游戏主机" AnchorPane.topAnchor="50"
+                 AnchorPane.leftAnchor="300"/>
+    <SearchButton fx:id="searchBtn" AnchorPane.topAnchor="50"
+            AnchorPane.leftAnchor="550"/>
+    <MyButton fx:id="search1" AnchorPane.topAnchor="50"
+              AnchorPane.leftAnchor="650"/>
+    <HBox AnchorPane.leftAnchor="100"
+          AnchorPane.bottomAnchor="190" spacing="60">
+    <ImageView >
+        <Image url="/img/i1.png"/>
+    </ImageView>
+        <ImageView >
+            <Image url="/img/i2.png"/>
+        </ImageView>
+        <ImageView >
+            <Image url="/img/i3.png"/>
+        </ImageView>
+        <ImageView >
+            <Image url="/img/i4.png"/>
+        </ImageView>
+    </HBox>
+    <HBox AnchorPane.leftAnchor="100"
+          AnchorPane.bottomAnchor="175" spacing="60">
+        <MyLabel text="桂格 (Quaker)  早餐谷物..."/>
+        <MyLabel text="ABC KMS棉柔系列卫生巾 纤..."/>
+        <MyLabel text="飞利浦(PHILIPS) 电动牙刷..."/>
+        <MyLabel text="AOC AGON 爱攻II..."/>
+    </HBox>
+    <HBox  AnchorPane.leftAnchor="100"
+           AnchorPane.bottomAnchor="140" spacing="20">
+<MyButton text="￥ 18.90"/>
+        <OtherButton text="￥ 27.90"/>
+        <MyButton text="￥ 49.90"/>
+        <OtherButton text="￥ 139.59"/>
+        <MyButton text="￥ 349.00"/>
+        <OtherButton text="￥ 698.00"/>
+        <MyButton text="￥ 128.00"/>
+        <OtherButton text="￥ 228.00"/>
+    </HBox>
+</AnchorPane>
